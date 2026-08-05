@@ -127,3 +127,161 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     table.footer{font-size:0.33em;}
 }
 
+/* =========================================================
+   新的会议横幅排版
+   放在 main.css 最后，覆盖模板原来的样式
+   ========================================================= */
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+/* 横幅图片 */
+.banner > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 左上角会议标题 */
+.conference-title {
+    position: absolute;
+    top: 24px;
+    left: 35px;
+    color: white;
+    text-align: left;
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.95),
+        0 0 8px rgba(0, 0, 0, 0.65);
+}
+
+/* 第一行主标题 */
+.conference-main-title {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: 0.5px;
+}
+
+/* 第二行副标题 */
+.conference-subtitle {
+    margin-top: 4px;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+/* 年份 */
+.conference-year {
+    margin-top: 7px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* 右下角日期和地点 */
+.conference-details {
+    position: absolute;
+    right: 28px;
+    bottom: 24px;
+    max-width: 55%;
+    padding: 10px 14px;
+
+    color: white;
+    font-size: 24px;
+    line-height: 1.32;
+    text-align: right;
+
+    background-color: rgba(0, 0, 0, 0.42);
+    border-radius: 4px;
+
+    text-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.95);
+}
+
+/* =========================================================
+   导航栏调整
+   避免 Venue & Travel 和 Flyer 挤在一起
+   ========================================================= */
+
+table.navigation {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 0;
+}
+
+td.navigation {
+    padding: 0;
+    text-align: center;
+}
+
+td.navigation a {
+    display: block;
+    padding: 13px 5px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   手机和平板显示
+   ========================================================= */
+
+@media only screen and (max-width: 800px) {
+
+    .conference-title {
+        top: 15px;
+        left: 20px;
+    }
+
+    .conference-main-title {
+        font-size: 38px;
+    }
+
+    .conference-subtitle {
+        font-size: 25px;
+    }
+
+    .conference-year {
+        font-size: 20px;
+    }
+
+    .conference-details {
+        right: 15px;
+        bottom: 15px;
+        max-width: 70%;
+        padding: 8px 10px;
+        font-size: 17px;
+    }
+
+    td.navigation a {
+        padding: 10px 2px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .conference-main-title {
+        font-size: 29px;
+    }
+
+    .conference-subtitle {
+        font-size: 20px;
+    }
+
+    .conference-year {
+        font-size: 17px;
+    }
+
+    .conference-details {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+    td.navigation a {
+        font-size: 12px;
+        white-space: normal;
+    }
+}
