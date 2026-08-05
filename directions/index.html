@@ -1,70 +1,480 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
+    <!-- =========================================================
+         Venue & Travel 页面基本设置
+
+         这个文件位于 directions 文件夹中，
+         所以图片和 CSS 文件的路径需要使用 ../
+         表示先返回网站主目录。
+         ========================================================= -->
+
+    <base href=".">
+
+    <!-- 浏览器标签页左侧的小图标 -->
+    <link rel="shortcut icon"
+          type="image/png"
+          href="../assets/favicon.png">
+
+    <!-- 网站主要排版和颜色文件 -->
+    <link rel="stylesheet"
+          type="text/css"
+          media="all"
+          href="../assets/main.css">
+
+    <!-- 让网页在手机和平板上正常显示 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- 搜索引擎看到的页面简介 -->
+    <meta name="description"
+          content="Venue, travel and accommodation information for the Conference on Nonlinear Partial Differential Equations and Applications 2027.">
+
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Directions | Conference Template</title>
+
+    <meta name="keywords"
+          content="University of New England, Armidale, conference venue, travel, accommodation, nonlinear PDEs">
+
+    <!-- 浏览器标签页显示的标题 -->
+    <title>Venue &amp; Travel | Nonlinear PDEs and Applications 2027</title>
 </head>
+
 
 <body>
 
+    <!-- =========================================================
+         顶部会议横幅
+         ========================================================= -->
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+
+        <!-- 子页面中的图片路径要写成 ../assets/banner.jpg -->
+        <img src="../assets/banner.jpg"
+             alt="Conference on Nonlinear Partial Differential Equations and Applications 2027">
+
+        <!-- 左上角会议名称 -->
+        <div class="conference-title">
+
+            <div class="conference-main-title">
+                Nonlinear PDEs
+            </div>
+
+            <div class="conference-subtitle">
+                and Applications
+            </div>
+
+            <div class="conference-year">
+                2027
+            </div>
+
         </div>
-        <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+
+        <!-- 右下角会议日期和地点 -->
+        <div class="conference-details">
+
+            <!-- 修改：会议日期确定以后替换下面文字 -->
+            <strong>Dates to be announced</strong><br>
+
+            University of New England<br>
+            Armidale, Australia
+
         </div>
+
     </div>
 
+
+    <!-- =========================================================
+         导航栏
+
+         当前页面是 Venue & Travel，
+         所以这一项带有 class="current"
+         ========================================================= -->
     <table class="navigation">
         <tr>
+
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+                <a title="Conference Home Page"
+                   href="../">
+                    Home
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
+                <a title="Register for the Conference"
+                   href="../registration">
+                    Registration
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
+                <a title="Conference Program"
+                   href="../program">
+                    Program
+                </a>
             </td>
+
             <td class="navigation">
-                <a class="current" title="Directions to the Conference" href="directions">Directions</a>
+                <a class="current"
+                   title="Venue, Travel and Accommodation"
+                   href="../directions">
+                    Venue &amp; Travel
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a title="Conference Flyer"
+                   href="../flyer">
+                    Flyer
+                </a>
             </td>
+
         </tr>
     </table>
 
 
-    <h2>Directions</h2>
+    <!-- =========================================================
+         会议地点
+         ========================================================= -->
+    <h2>Conference Venue</h2>
+
     <p>
-        Here&rsquo;s where you can put directions to the conference,
-        and other information that will help attendees find the location,
-        and find the building, and register, and find local places they can stay, etc.
-        You can embed a <a href="https://www.google.com/maps">Google Maps</a> iframe
-        with directions to the conference like a did below.
-        It can also be helpful to include maps of the campus itself,
-        or pictures of the building the conference will be held in.
-        I&rsquo;ve opted to use a placeholder image of a kitten below.
+        The conference will be held at the
+        <strong>University of New England</strong> in Armidale,
+        New South Wales, Australia.
     </p>
 
-    <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134998.56138929052!2d-121.98776790326531!3d37.869213445646146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808ff431db2f96d1%3A0x8b99d90a20aa67de!2sMt+Diablo!5e0!3m2!1sen!2sus!4v1561787340910!5m2!1sen!2sus"></iframe>
+    <p>
+        <!-- 修改：会议教室确定以后替换 To be announced -->
+        <strong>Conference room:</strong> To be announced<br>
 
-    <img class="center" src="assets/kitten4.jpg" alt="This is just a kitten right now" id="kitten">
+        <strong>Campus:</strong> University of New England, Armidale<br>
 
+        <strong>Address:</strong> Armidale, New South Wales 2351, Australia
+    </p>
+
+    <p>
+        Further information about the conference building, room number,
+        registration desk, and campus access will be provided closer to
+        the conference.
+    </p>
+
+
+    <!-- =========================================================
+         Google 地图
+
+         下面的地图以 University of New England, Armidale 为中心。
+         如果地图不能正常显示，可以检查 iframe 的 src 地址。
+         ========================================================= -->
+    <h2>Map</h2>
+
+    <div style="
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    ">
+
+        <iframe
+            title="Map of the University of New England, Armidale"
+            src="https://maps.google.com/maps?q=University%20of%20New%20England%20Armidale&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            style="
+                width: 100%;
+                height: 450px;
+                border: 0;
+            "
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+
+    <!-- =========================================================
+         前往 Armidale
+         ========================================================= -->
+    <h2>Getting to Armidale</h2>
+
+    <p>
+        Armidale is located in the New England region of northern
+        New South Wales. Participants may travel to Armidale by air,
+        car, coach, or train.
+    </p>
+
+
+    <!-- =========================================================
+         乘飞机
+         ========================================================= -->
+    <h3>By Air</h3>
+
+    <p>
+        Armidale Airport is the nearest airport to the University of
+        New England. Participants should check current airline schedules
+        when arranging their travel, as flight availability may vary.
+    </p>
+
+    <p>
+        The airport is a short drive from both the Armidale city centre
+        and the University of New England. Taxis and other local transport
+        options may be available at the airport.
+    </p>
+
+    <!--
+    如果会议安排机场接送，可以在这里增加：
+
+    <p>
+        A conference shuttle will operate between Armidale Airport and
+        the University of New England. Details will be announced later.
+    </p>
+    -->
+
+
+    <!-- =========================================================
+         自驾
+         ========================================================= -->
+    <h3>By Car</h3>
+
+    <p>
+        Armidale can be reached by road from Sydney, Brisbane, Newcastle,
+        Tamworth, and other regional centres. Participants travelling by
+        car are advised to allow sufficient time and check road conditions
+        before departure.
+    </p>
+
+    <p>
+        When using a navigation system, enter:
+    </p>
+
+    <p style="
+        margin-left: 25px;
+        padding: 12px 16px;
+        background-color: #f3f3f3;
+        border-left: 4px solid #2b4f81;
+    ">
+        <strong>University of New England, Armidale NSW 2351</strong>
+    </p>
+
+
+    <!-- =========================================================
+         火车和长途汽车
+         ========================================================= -->
+    <h3>By Train or Coach</h3>
+
+    <p>
+        Regional train and coach services may operate to Armidale.
+        Participants should consult the relevant transport provider for
+        current timetables, connections, and booking information.
+    </p>
+
+    <p>
+        The Armidale railway station is located near the city centre.
+        Local transport will be required to travel from the station to
+        the University of New England.
+    </p>
+
+
+    <!-- =========================================================
+         从机场、市区或火车站前往 UNE
+         ========================================================= -->
+    <h2>Local Transport</h2>
+
+    <p>
+        The University of New England is located several kilometres from
+        the Armidale city centre. Participants may use taxis, rideshare
+        services, local buses, private vehicles, or arranged conference
+        transport where available.
+    </p>
+
+    <p>
+        <!-- 修改：如果以后安排了接送，在这里补充 -->
+        Details of any conference shuttle or organised transport will be
+        announced later.
+    </p>
+
+
+    <!-- =========================================================
+         停车
+         ========================================================= -->
+    <h2>Parking</h2>
+
+    <p>
+        Parking is available in several areas of the University of New
+        England campus. Some parking areas may require a permit or may
+        have time restrictions.
+    </p>
+
+    <p>
+        Participants travelling by car should check the final conference
+        information before arrival. Details of the recommended parking
+        area will be provided after the conference venue has been confirmed.
+    </p>
+
+    <!--
+    会议楼和停车场确定后，可以增加：
+
+    <p>
+        The recommended parking area is Car Park XX, located near
+        Building XX.
+    </p>
+    -->
+
+
+    <!-- =========================================================
+         校园地图
+         ========================================================= -->
+    <h2>Campus Map</h2>
+
+    <p>
+        A campus map showing the conference building, registration desk,
+        parking areas, catering locations, and other important facilities
+        will be added to this page closer to the conference.
+    </p>
+
+    <!--
+    上传 UNE 校园地图的方法：
+
+    1. 把地图图片上传到 assets 文件夹；
+    2. 假设文件名为 une-campus-map.jpg；
+    3. 删除本注释，并加入下面代码：
+
+    <p style="text-align: center;">
+        <img src="../assets/une-campus-map.jpg"
+             alt="University of New England campus map"
+             style="
+                 width: 100%;
+                 max-width: 900px;
+                 height: auto;
+             ">
+    </p>
+    -->
+
+
+    <!-- =========================================================
+         住宿信息
+         ========================================================= -->
+    <h2>Accommodation</h2>
+
+    <p>
+        Participants are generally responsible for arranging and paying
+        for their own accommodation. Accommodation options are available
+        both on or near the University campus and in the Armidale city
+        centre.
+    </p>
+
+    <p>
+        A list of suggested accommodation options will be provided after
+        the conference dates and venue have been finalised.
+    </p>
+
+    <!--
+    住宿确定以后，可以用下面的格式：
+
+    <ul>
+        <li>
+            <strong>Accommodation Name 1</strong> —
+            located near the University campus.
+        </li>
+
+        <li>
+            <strong>Accommodation Name 2</strong> —
+            located in the Armidale city centre.
+        </li>
+
+        <li>
+            <strong>Accommodation Name 3</strong> —
+            budget accommodation option.
+        </li>
+    </ul>
+    -->
+
+    <p>
+        Participants should book accommodation early, particularly if the
+        conference coincides with other major events in Armidale.
+    </p>
+
+
+    <!-- =========================================================
+         天气和衣着
+         ========================================================= -->
+    <h2>Weather and Clothing</h2>
+
+    <p>
+        Armidale is located at a relatively high elevation and can be
+        cooler than many other Australian cities. Temperatures may change
+        considerably between daytime and evening.
+    </p>
+
+    <p>
+        Participants are advised to check the weather forecast shortly
+        before travelling and bring suitable warm clothing, especially
+        if the conference is held during the cooler months.
+    </p>
+
+
+    <!-- =========================================================
+         无障碍与特殊需求
+         ========================================================= -->
+    <h2>Accessibility and Special Requirements</h2>
+
+    <p>
+        Participants who require accessible parking, mobility assistance,
+        dietary arrangements, or other support are encouraged to contact
+        the organising committee before the conference.
+    </p>
+
+
+    <!-- =========================================================
+         联系方式
+         ========================================================= -->
+    <h2>Travel Enquiries</h2>
+
+    <p>
+        For questions about the venue, transport, accommodation, or local
+        arrangements, please contact the organising committee.
+    </p>
+
+    <p>
+        <!-- 修改：替换成会议实际邮箱 -->
+        Email:
+        <a href="mailto:conference-email@une.edu.au">
+            conference-email@une.edu.au
+        </a>
+    </p>
+
+
+    <!-- =========================================================
+         页面更新时间
+         ========================================================= -->
+    <p style="
+        text-align: right;
+        margin-top: 35px;
+        font-size: 0.9em;
+        color: #666666;
+    ">
+        Last updated: To be announced
+    </p>
+
+
+    <!-- =========================================================
+         网页底部
+         ========================================================= -->
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+
+        &copy; 2027 Conference on Nonlinear Partial Differential Equations
+        and Applications
+
+        &nbsp;|&nbsp;
+
+        Hosted at the University of New England
+
+        &nbsp;|&nbsp;
+
+        Website design adapted from
+        <a href="https://github.com/mikepierce">
+            Mike Pierce
+        </a>
+
     </footer>
 
 </body>
+
 </html>
