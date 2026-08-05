@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Registration | Conference Template</title>
+    <!-- =========================================================
+         Registration 页面设置
+         这个文件位于 registration 文件夹中，
+         所以图片和 CSS 路径需要使用 ../ 返回上一层
+         ========================================================= -->
 
-        <!-- 修改-->
-   <head>
     <base href=".">
 
+    <!-- 网站左上角的小图标 -->
     <link rel="shortcut icon"
           type="image/png"
           href="../assets/favicon.png">
 
+    <!-- 网站主要样式文件 -->
     <link rel="stylesheet"
           type="text/css"
           media="all"
           href="../assets/main.css">
 
+    <!-- 让网页在手机和平板上正常显示 -->
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Nonlinear PDEs and Applications 2027</title>
+    <!-- 搜索引擎看到的页面简介 -->
+    <meta name="description"
+          content="Registration for the Conference on Nonlinear Partial Differential Equations and Applications 2027.">
+
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+
+    <meta name="keywords"
+          content="conference registration, nonlinear PDEs, partial differential equations, University of New England">
+
+    <!-- 浏览器标签页上显示的标题 -->
+    <title>Registration | Nonlinear PDEs and Applications 2027</title>
 </head>
+
 
 <body>
 
+    <!-- =========================================================
+         顶部会议横幅
+         ========================================================= -->
     <div class="banner">
 
+        <!-- 子页面中图片路径需要写成 ../assets/banner.jpg -->
         <img src="../assets/banner.jpg"
              alt="Conference on Nonlinear Partial Differential Equations and Applications 2027">
 
+        <!-- 左上角会议名称 -->
         <div class="conference-title">
+
             <div class="conference-main-title">
                 Nonlinear PDEs
             </div>
@@ -49,59 +65,238 @@
             <div class="conference-year">
                 2027
             </div>
+
         </div>
 
+        <!-- 右下角会议日期和地点 -->
         <div class="conference-details">
+
+            <!-- 修改：确定会议日期后替换下面文字 -->
             <strong>Dates to be announced</strong><br>
+
             University of New England<br>
             Armidale, Australia
+
         </div>
 
     </div>
 
-            <!-- 修改-->
 
-
+    <!-- =========================================================
+         导航栏
+         当前页面是 Registration，所以这里有 class="current"
+         ========================================================= -->
     <table class="navigation">
         <tr>
+
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+                <a title="Conference Home Page"
+                   href="../">
+                    Home
+                </a>
             </td>
+
             <td class="navigation">
-                <a class="current" title="Register for the Conference" href="registration">Registration</a>
+                <a class="current"
+                   title="Register for the Conference"
+                   href="../registration">
+                    Registration
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
+                <a title="Conference Program"
+                   href="../program">
+                    Program
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
+                <a title="Venue, Travel and Accommodation"
+                   href="../directions">
+                    Venue &amp; Travel
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a title="Conference Flyer"
+                   href="../flyer">
+                    Flyer
+                </a>
             </td>
+
         </tr>
     </table>
 
-    <br>
+
+    <!-- =========================================================
+         Registration 页面正文
+         ========================================================= -->
+    <h2>Registration</h2>
 
     <p>
-        Here&rsquo;s where you provide instructions how to register for your conference.
-        We used a <a href="https://www.google.com/forms/about/">Google Form</a> 
-        and embedded it into an <i>iframe</i> (it&rsquo;s commented out in the html here).
+        Registration for the conference will open soon.
+        Detailed information about registration fees, abstract submission,
+        and important deadlines will be published on this page.
     </p>
+
+    <p>
+        Participants who wish to give a contributed talk will be invited
+        to submit a title and abstract during the registration process.
+    </p>
+
+
+    <!-- =========================================================
+         重要日期
+         确定日期后修改右侧内容
+         ========================================================= -->
+    <h2>Important Dates</h2>
+
+    <table style="
+        width: 100%;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    ">
+
+        <tr>
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+                font-weight: bold;
+            ">
+                Registration opens
+            </td>
+
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+            ">
+                To be announced
+            </td>
+        </tr>
+
+        <tr>
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+                font-weight: bold;
+            ">
+                Abstract submission deadline
+            </td>
+
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+            ">
+                To be announced
+            </td>
+        </tr>
+
+        <tr>
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+                font-weight: bold;
+            ">
+                Registration deadline
+            </td>
+
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+            ">
+                To be announced
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- =========================================================
+         Google Form 注册表
+         
+         以后建立好 Google Form 后：
+         1. 在 Google Form 右上角点击 Send
+         2. 选择 <> Embed HTML
+         3. 复制 iframe 代码
+         4. 用新的 iframe 替换下面注释中的示例
+         ========================================================= -->
+
     <!--
-    <iframe class="registration" src="EMBED LINK FOR GOOGLE FORM HERE"></iframe>
+    <iframe
+        class="registration"
+        src="在这里粘贴Google Form的嵌入链接"
+        width="100%"
+        height="1600"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading...
+    </iframe>
     -->
-    <p>
-        Here&rsquo;s another paragraph of filler text:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+
+
+    <!-- =========================================================
+         在注册表尚未开放时显示的提示
+         Google Form 开放以后，可以删除下面这一段
+         ========================================================= -->
+    <p style="
+        text-align: center;
+        padding: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #f3f3f3;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+    ">
+        <strong>Online registration is not yet open.</strong><br>
+        Please check this page again for updates.
     </p>
 
+
+    <!-- =========================================================
+         联系方式
+         ========================================================= -->
+    <h2>Enquiries</h2>
+
+    <p>
+        For questions about registration or abstract submission,
+        please contact the organising committee.
+    </p>
+
+    <p>
+        <!-- 修改：替换成会议实际邮箱 -->
+        Email:
+        <a href="mailto:conference-email@une.edu.au">
+            conference-email@une.edu.au
+        </a>
+    </p>
+
+
+    <!-- =========================================================
+         网页底部
+         ========================================================= -->
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+
+        &copy; 2027 Conference on Nonlinear Partial Differential Equations
+        and Applications
+
+        &nbsp;|&nbsp;
+
+        Hosted at the University of New England
+
+        &nbsp;|&nbsp;
+
+        Website design adapted from
+        <a href="https://github.com/mikepierce">
+            Mike Pierce
+        </a>
+
     </footer>
 
 </body>
-</html>
 
+</html>
