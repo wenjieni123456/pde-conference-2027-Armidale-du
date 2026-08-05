@@ -1,101 +1,435 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
     <base href=".">
+
+    <!-- 网站左上角的小图标。暂时继续使用模板原来的 favicon.png -->
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+
+    <!-- 网站的主要排版文件 -->
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
+
+    <!-- 让网站在手机上正常显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 修改：下面是搜索引擎看到的网站简介 -->
+    <meta name="description"
+          content="Conference on Nonlinear Partial Differential Equations and Applications 2027, University of New England, Armidale, Australia.">
+
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Conference Template</title>
+
+    <!-- 修改：会议关键词，可以以后增加 free boundary、reaction-diffusion 等 -->
+    <meta name="keywords"
+          content="mathematics conference, partial differential equations, nonlinear PDEs, free boundary problems, reaction-diffusion equations, University of New England">
+
+    <!-- 修改：浏览器标签页上显示的会议名称 -->
+    <title>Nonlinear PDEs and Applications 2027</title>
 </head>
 
 <body>
 
+    <!-- =========================================================
+         顶部会议横幅
+         背景图片来自 assets/banner.jpg
+         以后只需要替换 banner.jpg，就能更换横幅图片
+         ========================================================= -->
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
+
+        <img src="assets/banner.jpg"
+             alt="Conference on Nonlinear Partial Differential Equations and Applications 2027">
+
         <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+            <!-- 修改：会议名称。title1 和 title2 会使用两种不同的字体样式 -->
+            <span class="title1">Nonlinear PDEs</span>
+            <span class="title2">and Applications</span>
+            <span class="year">2027</span>
         </div>
+
         <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+            <!-- 修改：确定日期后，把 Dates to be announced 换成具体日期 -->
+            Dates to be announced<br>
+
+            <!-- 修改：会议地点 -->
+            University of New England<br>
+            Armidale, Australia
         </div>
+
     </div>
 
+
+    <!-- =========================================================
+         网站导航栏
+         每一项分别连接到相应的文件夹
+         ========================================================= -->
     <table class="navigation">
         <tr>
+
             <td class="navigation">
-                <a class="current" title="Conference Home Page" href=".">Home</a>
+                <a class="current"
+                   title="Conference Home Page"
+                   href=".">
+                    Home
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
+                <a title="Register for the Conference"
+                   href="registration">
+                    Registration
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
+                <a title="Conference Program"
+                   href="program">
+                    Program
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
+                <a title="Venue, Travel and Accommodation"
+                   href="directions">
+                    Venue &amp; Travel
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a title="Conference Flyer"
+                   href="flyer">
+                    Flyer
+                </a>
             </td>
+
         </tr>
     </table>
 
-    <h2>What is This Website?</h2>
+
+    <!-- =========================================================
+         会议简介
+         ========================================================= -->
+    <h2>About the Conference</h2>
+
     <p>
-        This website is a template that you could use for a (small) academic conference. 
-        It&rsquo;s got a page for registration, where you can embed a Google Form or some other way for participants to register.
-        It&rsquo;s got a program page to list the schedule for the conference.
-        It&rsquo;s got a directions page to add a bunch of instructions how to get to the conference.
-        It&rsquo;s got a page to put up the flyers and other promotional materials for folks to download.
-    </p>
-    <p>
-        You can use this template by cloning all the files from this
-        <a target="_blank" href="https://github.com/mikepierce/conference-website-template">GitHub repo here</a>.
-        This template was created from a website I made for 
-        <a target="_blank" href="http://math.ucr.edu/~mathconn/">MathConnections 2019</a>,
-        in case you want to see an example of this template being used in the wild.
-    </p>
-    <p>
-        This paragraph is just some filler text to give the homepage some volume:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+        The <strong>Conference on Nonlinear Partial Differential Equations
+        and Applications 2027</strong> will be held at the
+        <strong>University of New England</strong> in Armidale, Australia.
+        The conference will bring together researchers working in nonlinear
+        partial differential equations and related areas.
     </p>
 
-    <h2>Organizers</h2>
     <p>
-        Here&rsquo;s a good place to list the organizers and sponsors of the conference,
-        as well as list contact information for the organizers,
-        and show off the logos of the sponsors.
-        It looks like his conference was sponsored by kittens!
+        The aim of the conference is to provide a friendly and stimulating
+        environment in which researchers can present recent developments,
+        exchange ideas, explore new research directions, and establish
+        collaborations. The program will include invited lectures and
+        contributed talks.
     </p>
-    <table class="sponsors">
+
+    <p>
+        Researchers at all career stages, including postgraduate students
+        and early-career researchers, are warmly invited to participate.
+    </p>
+
+
+    <!-- =========================================================
+         主要研究方向
+         可以根据会议实际主题增加或删除
+         ========================================================= -->
+    <h2>Conference Topics</h2>
+
+    <p>
+        Topics of interest include, but are not limited to:
+    </p>
+
+    <ul>
+        <li>Nonlinear partial differential equations;</li>
+        <li>Reaction–diffusion equations and systems;</li>
+        <li>Free boundary problems;</li>
+        <li>Propagation phenomena and travelling waves;</li>
+        <li>Nonlocal and fractional diffusion equations;</li>
+        <li>Elliptic and parabolic equations;</li>
+        <li>Mathematical biology and population dynamics;</li>
+        <li>Dynamical systems arising from partial differential equations;</li>
+        <li>Related analytical and numerical methods.</li>
+    </ul>
+
+
+    <!-- =========================================================
+         注册和日程快捷入口
+         ========================================================= -->
+    <h2>Registration and Program</h2>
+
+    <p>
+        Registration details, abstract submission instructions, and the
+        conference program will be published on this website.
+    </p>
+
+    <p style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
+
+        <a href="registration"
+           style="
+               display: inline-block;
+               padding: 12px 24px;
+               margin: 6px;
+               background-color: #2b4f81;
+               color: white;
+               text-decoration: none;
+               border-radius: 4px;
+               font-weight: bold;
+           ">
+            Registration
+        </a>
+
+        <a href="program"
+           style="
+               display: inline-block;
+               padding: 12px 24px;
+               margin: 6px;
+               background-color: #2b4f81;
+               color: white;
+               text-decoration: none;
+               border-radius: 4px;
+               font-weight: bold;
+           ">
+            Conference Program
+        </a>
+
+    </p>
+
+
+    <!-- =========================================================
+         重要日期
+         目前都没有确定，所以使用 To be announced
+         确定以后，只需修改右侧文字
+         ========================================================= -->
+    <h2>Important Dates</h2>
+
+    <table style="
+        width: 100%;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    ">
+
         <tr>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten1.jpg" alt="First Sponsor Name">
-                </a>
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+                font-weight: bold;
+            ">
+                Registration opens
             </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten2.jpg" alt="Second Sponsor Name" style="width: 80%">
-                </a>
-            </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten3.jpg" alt="Third Sponsor Name">
-                </a>
+
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+            ">
+                To be announced
             </td>
         </tr>
+
+        <tr>
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+                font-weight: bold;
+            ">
+                Abstract submission deadline
+            </td>
+
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+            ">
+                To be announced
+            </td>
+        </tr>
+
+        <tr>
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+                font-weight: bold;
+            ">
+                Registration deadline
+            </td>
+
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+            ">
+                To be announced
+            </td>
+        </tr>
+
+        <tr>
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+                font-weight: bold;
+            ">
+                Conference dates
+            </td>
+
+            <td style="
+                padding: 12px;
+                border-bottom: 1px solid #cccccc;
+            ">
+                To be announced
+            </td>
+        </tr>
+
     </table>
 
+
+    <!-- =========================================================
+         邀请报告人
+         报告人确定以后，可以把下面一句换成具体名单
+         ========================================================= -->
+    <h2>Invited Speakers</h2>
+
+    <p>
+        The list of invited speakers will be announced soon.
+    </p>
+
+    <!--
+    报告人确定以后，可以使用下面的格式：
+
+    <ul>
+        <li>
+            <strong>Professor Firstname Surname</strong>,
+            University Name, Country
+        </li>
+
+        <li>
+            <strong>Professor Firstname Surname</strong>,
+            University Name, Country
+        </li>
+    </ul>
+    -->
+
+
+    <!-- =========================================================
+         会议地点
+         ========================================================= -->
+    <h2>Venue</h2>
+
+    <p>
+        The conference will be held at the
+        <strong>University of New England</strong>,
+        Armidale, New South Wales, Australia.
+    </p>
+
+    <p>
+        Information about the conference room, campus map, accommodation,
+        transport, and travel to Armidale will be provided on the
+        <a href="directions">Venue &amp; Travel</a> page.
+    </p>
+
+
+    <!-- =========================================================
+         组织委员会
+         请把姓名和单位改成最终名单
+         ========================================================= -->
+    <h2>Organising Committee</h2>
+
+    <p>
+        <!-- 修改：把下面的姓名替换成最终的组织委员会名单 -->
+
+        <strong>Professor Yihong Du</strong><br>
+        University of New England, Australia
+    </p>
+
+    <p>
+        <strong>Dr Wenjie Ni</strong><br>
+        University of New England, Australia
+    </p>
+
+    <!--
+    如需增加其他组织者，可以复制下面这一段：
+
+    <p>
+        <strong>Professor Firstname Surname</strong><br>
+        University Name, Country
+    </p>
+    -->
+
+
+    <!-- =========================================================
+         联系方式
+         请把电子邮箱改成会议实际使用的邮箱
+         ========================================================= -->
+    <h2>Contact</h2>
+
+    <p>
+        For enquiries about the conference, please contact the organising
+        committee.
+    </p>
+
+    <p>
+        <!-- 修改：把下面的邮箱换成会议邮箱或你的 UNE 邮箱 -->
+
+        Email:
+        <a href="mailto:conference-email@une.edu.au">
+            conference-email@une.edu.au
+        </a>
+    </p>
+
+
+    <!-- =========================================================
+         主办或支持单位
+         现在先不使用原模板中的小猫图片
+         ========================================================= -->
+    <h2>Host Institution</h2>
+
+    <p style="text-align: center;">
+        <strong>University of New England</strong><br>
+        Armidale, New South Wales, Australia
+    </p>
+
+    <!--
+    以后如果需要加入 UNE Logo：
+
+    1. 把 UNE Logo 图片上传到 assets 文件夹；
+    2. 假设文件名为 une-logo.png；
+    3. 删除本注释，并加入：
+
+    <p style="text-align: center;">
+        <img src="assets/une-logo.png"
+             alt="University of New England"
+             style="max-width: 280px;">
+    </p>
+
+    使用 UNE Logo 前最好确认符合 UNE 的品牌使用规定。
+    -->
+
+
+    <!-- =========================================================
+         网页底部
+         ========================================================= -->
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+
+        <!-- 修改：可以更换会议名称 -->
+        &copy; 2027 Conference on Nonlinear Partial Differential Equations
+        and Applications
+
+        &nbsp;|&nbsp;
+
+        Hosted at the University of New England
+
+        &nbsp;|&nbsp;
+
+        Website design adapted from
+        <a href="https://github.com/mikepierce">
+            Mike Pierce
+        </a>
+
     </footer>
 
 </body>
-</html>
 
+</html>
