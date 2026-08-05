@@ -1,335 +1,584 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
+    <!-- =========================================================
+         Program 页面基本设置
+
+         这个文件位于 program 文件夹中，
+         因此调用 assets 文件夹中的文件时，需要使用 ../
+         表示先返回上一层目录。
+         ========================================================= -->
+
+    <base href=".">
+
+    <!-- 网站标签页左侧的小图标 -->
+    <link rel="shortcut icon"
+          type="image/png"
+          href="../assets/favicon.png">
+
+    <!-- 网站主要排版和颜色文件 -->
+    <link rel="stylesheet"
+          type="text/css"
+          media="all"
+          href="../assets/main.css">
+
+    <!-- 让网页在手机和平板上正常显示 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- MathJax：使网页可以显示 LaTeX 数学公式 -->
+    <script type="text/javascript"
+            async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
     </script>
-    <meta name="description" content="Conference Template">
+
+    <!-- 搜索引擎看到的网页简介 -->
+    <meta name="description"
+          content="Program for the Conference on Nonlinear Partial Differential Equations and Applications 2027.">
+
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Program | Conference Template</title>
+
+    <meta name="keywords"
+          content="conference program, nonlinear PDEs, partial differential equations, University of New England">
+
+    <!-- 浏览器标签页显示的标题 -->
+    <title>Program | Nonlinear PDEs and Applications 2027</title>
 </head>
+
 
 <body>
 
+    <!-- =========================================================
+         顶部会议横幅
+         ========================================================= -->
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+
+        <!-- 子页面中的图片路径必须使用 ../assets/banner.jpg -->
+        <img src="../assets/banner.jpg"
+             alt="Conference on Nonlinear Partial Differential Equations and Applications 2027">
+
+        <!-- 左上角会议名称 -->
+        <div class="conference-title">
+
+            <div class="conference-main-title">
+                Nonlinear PDEs
+            </div>
+
+            <div class="conference-subtitle">
+                and Applications
+            </div>
+
+            <div class="conference-year">
+                2027
+            </div>
+
         </div>
-        <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+
+        <!-- 右下角日期和地点 -->
+        <div class="conference-details">
+
+            <!-- 修改：会议日期确定后替换下面这句话 -->
+            <strong>Dates to be announced</strong><br>
+
+            University of New England<br>
+            Armidale, Australia
+
         </div>
+
     </div>
 
+
+    <!-- =========================================================
+         导航栏
+
+         当前页面是 Program，
+         所以 Program 链接带有 class="current"
+         ========================================================= -->
     <table class="navigation">
         <tr>
+
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+                <a title="Conference Home Page"
+                   href="../">
+                    Home
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
+                <a title="Register for the Conference"
+                   href="../registration">
+                    Registration
+                </a>
             </td>
+
             <td class="navigation">
-                <a class="current" title="Conference Program" href="program">Program</a> 
+                <a class="current"
+                   title="Conference Program"
+                   href="../program">
+                    Program
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
+                <a title="Venue, Travel and Accommodation"
+                   href="../directions">
+                    Venue &amp; Travel
+                </a>
             </td>
+
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a title="Conference Flyer"
+                   href="../flyer">
+                    Flyer
+                </a>
             </td>
+
         </tr>
     </table>
 
+
+    <!-- =========================================================
+         页面标题和说明
+         ========================================================= -->
     <h2>Conference Program</h2>
 
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                8:30am
-            </td>
-            <td class="title-special">
-                Registration and Coffee &amp; Tea!
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s a section in the program that isn&rsquo;t a talk. 
-                Notice that the title is styled differently than the ones for talks.
-            </td>
-        </tr>
-    </table>
+    <p>
+        The detailed conference timetable will be published closer to the
+        conference. The list of speakers and talk titles will be updated
+        regularly as further information becomes available.
+    </p>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:00am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
-            </td>
-        </tr>
-    </table>
+    <!-- 修改：如果日程尚未最终确定，可以保留下面的提示 -->
+    <p style="
+        padding: 15px 18px;
+        background-color: #f3f3f3;
+        border-left: 4px solid #2b4f81;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    ">
+        <strong>Provisional program:</strong>
+        The information below is subject to change.
+    </p>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:25am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:50am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+    <!-- =========================================================
+         第一部分：报告人名单
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                10:15am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+         建议只列：
+         Number | Speaker | Institution
 
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                10:40am
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
+         报告题目放在后面的单独列表中，
+         这样表格不会太宽，手机上也比较容易阅读。
+         ========================================================= -->
+    <h2>Speakers</h2>
 
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
-                11:00am
-            </td>
-            <td class="title">
-                This is a Plenary Talk!
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s the abstract for the plenary talk! Notice again that the formatting of this time-block is a bit different that the rest of of the talks.
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+    <div style="overflow-x: auto;">
 
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                Noon
-            </td>
-            <td class="title-special">
-                Lunch
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
+        <table class="speaker-list" style="
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 35px;
+        ">
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                1:30pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+            <!-- 表格标题行 -->
+            <tr style="background-color: #2b4f81; color: white;">
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                1:55pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+                <th style="
+                    width: 8%;
+                    padding: 12px;
+                    border: 1px solid #cccccc;
+                    text-align: center;
+                ">
+                    No.
+                </th>
 
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                2:50pm
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
+                <th style="
+                    width: 37%;
+                    padding: 12px;
+                    border: 1px solid #cccccc;
+                    text-align: left;
+                ">
+                    Speaker
+                </th>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                3:10pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+                <th style="
+                    width: 55%;
+                    padding: 12px;
+                    border: 1px solid #cccccc;
+                    text-align: left;
+                ">
+                    Institution
+                </th>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                3:35pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+            </tr>
 
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
-                4:00pm
-            </td>
-            <td class="title">
-                This is Another Plenary Talk!
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
 
+            <!-- =================================================
+                 报告人 1
+
+                 修改方法：
+                 Speaker One 改成姓名；
+                 University Name, Country 改成单位和国家。
+                 ================================================= -->
+            <tr>
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    1
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker One</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 2 -->
+            <tr style="background-color: #f7f7f7;">
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    2
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Two</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 3 -->
+            <tr>
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    3
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Three</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 4 -->
+            <tr style="background-color: #f7f7f7;">
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    4
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Four</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 5 -->
+            <tr>
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    5
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Five</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 6 -->
+            <tr style="background-color: #f7f7f7;">
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    6
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Six</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 7 -->
+            <tr>
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    7
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Seven</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 8 -->
+            <tr style="background-color: #f7f7f7;">
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    8
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Eight</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 9 -->
+            <tr>
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    9
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Nine</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!-- 报告人 10 -->
+            <tr style="background-color: #f7f7f7;">
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    10
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Ten</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+
+
+            <!--
+            ======================================================
+            增加更多报告人的方法
+
+            复制下面整个 <tr>...</tr>，然后修改序号、姓名和单位：
+
+            <tr>
+                <td style="padding: 11px; border: 1px solid #cccccc; text-align: center;">
+                    11
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    <strong>Speaker Eleven</strong>
+                </td>
+
+                <td style="padding: 11px; border: 1px solid #cccccc;">
+                    University Name, Country
+                </td>
+            </tr>
+            ======================================================
+            -->
+
+        </table>
+
+    </div>
+
+
+    <!-- =========================================================
+         第二部分：报告题目
+
+         使用有编号的列表 <ol>，编号会自动产生。
+
+         每一项写：
+         姓名：报告题目
+
+         姓名使用 <strong>...</strong> 加粗。
+         报告题目使用 <em>...</em> 斜体。
+         ========================================================= -->
+    <h2>Talk Titles</h2>
+
+    <ol class="talk-title-list" style="
+        line-height: 1.65;
+        padding-left: 32px;
+        margin-bottom: 35px;
+    ">
+
+        <!-- 报告题目 1 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker One:</strong>
+            <em>Title of the First Talk</em>
+        </li>
+
+        <!-- 报告题目 2 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Two:</strong>
+            <em>Title of the Second Talk</em>
+        </li>
+
+        <!-- 报告题目 3 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Three:</strong>
+            <em>Title of the Third Talk</em>
+        </li>
+
+        <!-- 报告题目 4 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Four:</strong>
+            <em>Title of the Fourth Talk</em>
+        </li>
+
+        <!-- 报告题目 5 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Five:</strong>
+            <em>Title of the Fifth Talk</em>
+        </li>
+
+        <!-- 报告题目 6 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Six:</strong>
+            <em>Title of the Sixth Talk</em>
+        </li>
+
+        <!-- 报告题目 7 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Seven:</strong>
+            <em>Title of the Seventh Talk</em>
+        </li>
+
+        <!-- 报告题目 8 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Eight:</strong>
+            <em>Title of the Eighth Talk</em>
+        </li>
+
+        <!-- 报告题目 9 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Nine:</strong>
+            <em>Title of the Ninth Talk</em>
+        </li>
+
+        <!-- 报告题目 10 -->
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Ten:</strong>
+            <em>Title of the Tenth Talk</em>
+        </li>
+
+        <!--
+        增加报告题目时，复制下面这一段：
+
+        <li style="margin-bottom: 14px;">
+            <strong>Speaker Eleven:</strong>
+            <em>Title of the Eleventh Talk</em>
+        </li>
+        -->
+
+    </ol>
+
+
+    <!-- =========================================================
+         数学公式示例
+
+         MathJax 已经在网页顶部开启，所以报告题目中可以直接写：
+
+         行内公式：
+         \(u_t-\Delta u=f(u)\)
+
+         例如：
+         <em>Propagation dynamics for \(u_t-\Delta u=f(u)\)</em>
+
+         不需要使用美元符号。
+         ========================================================= -->
+
+
+    <!-- =========================================================
+         详细时间表
+
+         目前尚未确定时，可以先显示下面的提示。
+         确定以后，可以改成 PDF 链接或另建日程表。
+         ========================================================= -->
+    <h2>Detailed Timetable</h2>
+
+    <p>
+        The detailed timetable, including talk times, coffee breaks,
+        lunches, and other conference activities, will be announced later.
+    </p>
+
+    <!--
+    以后如果有 PDF 日程，可以使用：
+
+    <p style="text-align: center;">
+        <a href="../assets/conference-program.pdf"
+           target="_blank">
+            Download the detailed conference program
+        </a>
+    </p>
+
+    注意：需要先把 conference-program.pdf 上传到 assets 文件夹。
+    -->
+
+
+    <!-- =========================================================
+         页面更新时间
+
+         每次较大修改后，可以更新这里的日期，
+         让参会者知道自己看到的是不是最新版本。
+         ========================================================= -->
+    <p style="
+        text-align: right;
+        margin-top: 35px;
+        font-size: 0.9em;
+        color: #666666;
+    ">
+        Last updated: To be announced
+    </p>
+
+
+    <!-- =========================================================
+         网页底部
+         ========================================================= -->
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+
+        &copy; 2027 Conference on Nonlinear Partial Differential Equations
+        and Applications
+
+        &nbsp;|&nbsp;
+
+        Hosted at the University of New England
+
+        &nbsp;|&nbsp;
+
+        Website design adapted from
+        <a href="https://github.com/mikepierce">
+            Mike Pierce
+        </a>
+
     </footer>
 
 </body>
-</html>
 
+</html>
